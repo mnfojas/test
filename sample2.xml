@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- From https://developers.google.com/gmail/contextual_gadgets#hello_world_example_code -->
 <Module>
-  <ModulePrefs title="Hello World"
-    description="Bob the Builder"
-    height="20">
-
+  <ModulePrefs height="20">
     <!-- Declare feature dependencies. -->
 
     <!-- This one is not specific to Gmail contextual gadgets. -->
@@ -33,10 +30,6 @@
   <Content type="html" view="card">
     <![CDATA[
       <script type="text/javascript">
-        debugger;
-      </script>
-      <script type="text/javascript">
-        
         matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
         var listItem;
