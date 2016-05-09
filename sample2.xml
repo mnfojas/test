@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- From https://developers.google.com/gmail/contextual_gadgets#hello_world_example_code -->
 <Module>
-  <ModulePrefs title="See Numbers"
+  <ModulePrefs title="Hello"
     height="20">
 
     <!-- Declare feature dependencies. -->
