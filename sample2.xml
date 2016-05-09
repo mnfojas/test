@@ -38,7 +38,7 @@
         for (var match in matches) {
           for (var key in matches[match]) {
             listItem = document.createElement('LI');
-            extractedText = document.createTextNode(key + ": " + matches[match][key] + " by Nikko 11");
+            extractedText = document.createTextNode(key + ": " + matches[match][key]);
             listItem.appendChild(extractedText);
             matchList.appendChild(listItem);
           }
