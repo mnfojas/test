@@ -34,7 +34,9 @@
         var matchList = document.createElement('UL');
         var listItem;
         var extractedText;
-        
+
+        console.log(matches);
+
         for (var match in matches) {
           for (var key in matches[match]) {
             listItem = document.createElement('LI');
