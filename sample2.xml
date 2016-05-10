@@ -22,9 +22,9 @@
         google.com:EmailBodyExtractor,google.com:SenderEmailExtractor
       </Param>
     </Require>
-
+    
   </ModulePrefs>
-
+  
   <!-- Define the content type and display location. The settings
    "html" and "card" are required for all Gmail contextual gadgets. -->
   <Content type="html" view="card">
@@ -34,7 +34,7 @@
         var matchList = document.createElement('UL');
         var listItem;
         var extractedText;
-
+        
         console.log(matches);
 
         for (var match in matches) {
