@@ -31,7 +31,6 @@
     <![CDATA[
       <!-- Start with Single Sign-On -->
       <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script>
-      
       <script type="text/javascript">
         matches = google.contentmatch.getContentMatches();
         var matchList = document.createElement('UL');
