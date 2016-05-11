@@ -29,8 +29,9 @@
    "html" and "card" are required for all Gmail contextual gadgets. -->
   <Content type="html" view="card">
     <![CDATA[
+    
       <!-- Start with Single Sign-On -->
-      <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script>
+      <!-- <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> -->
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
       <script type="text/javascript">
         var message_id;
@@ -75,6 +76,7 @@
           }
         });
       </script>
+      
     ]]>
   </Content>
 </Module>
