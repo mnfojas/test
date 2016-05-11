@@ -54,7 +54,7 @@
           cache: false,
           contentType: "application/json",
           dataType: "jsonp",
-          url: "http://www.stoddarts.com.au/",
+          url: "http://www.stoddarts.com.au",
           complete: function(response)
           {
             console.log(response)
