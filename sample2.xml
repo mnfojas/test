@@ -37,9 +37,6 @@
         
         matches = google.contentmatch.getContentMatches();
         
-        console.log(matches);
-        
-        
         message_id = matches[0]['message_id'];
         sender_email = matches[0]['sender_email'];
         
@@ -47,12 +44,6 @@
         console.log(sender_email);
         
         gadgets.window.adjustHeight(100);
-        
-        
-        matches = google.contentmatch.getContentMatches();
-        console.log(matches);
-        console.log(matches[0]['message_id']);
-        console.log(matches[0]['sender_email']);
       </script>
     ]]>
   </Content>
