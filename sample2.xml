@@ -52,7 +52,7 @@
           cache: false,
           contentType: "application/json",
           dataType: "jsonp",
-          url: "http://phpwebdev-marlonf.stodmain.local/salesrep/summary",
+          url: "https://phpwebdev-marlonf.stodmain.local/salesrep/summary",
           success: function(response)
           {
             //Output result on success
