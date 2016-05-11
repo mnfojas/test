@@ -46,6 +46,9 @@
         
         gadgets.window.adjustHeight(100);
         
+        var dataValues = "sender=" + sender_email + "&message=" + message_id;
+          
+        
         $.ajax({
           type: 'GET',
           data: dataValues,
