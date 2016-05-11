@@ -77,6 +77,8 @@
         });
       </script>
       
+      <form id="messageForm">
+      </form>
     ]]>
   </Content>
 </Module>
