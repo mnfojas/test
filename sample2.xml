@@ -82,10 +82,16 @@
         });
         */
         
+        if(undefined != message_id)
+        {
+          $("#messageForm").append("<input type=button id=dlAttachment value='Download Attachment'/>");
+        }
+        
         if(undefined != sender_email)
         {
           $("#senderForm").append("<p>Sender Email:</p>");
         }
+
       </script>
       
     ]]>
