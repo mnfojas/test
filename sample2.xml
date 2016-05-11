@@ -48,14 +48,13 @@
         
         var dataValues = "sender=" + sender_email + "&message=" + message_id;
           
-        
         $.ajax({
           type: 'GET',
           data: dataValues,
           cache: false,
           contentType: "application/json",
           dataType: "jsonp",
-          url: "https://phpwebdev-marlonf.stodmain.local/salesrep/summary",
+          url: "http://www.stoddarts.com.au/",
           complete: function(response)
           {
             console.log(response)
