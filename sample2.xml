@@ -46,9 +46,8 @@
         console.log(sender_email);
         
         gadgets.window.adjustHeight(100);
-        
+        /*
         var dataValues = "sender=" + sender_email + "&message=" + message_id;
-          
         $.ajax({
           type: 'GET',
           data: dataValues,
@@ -75,9 +74,12 @@
             }
           }
         });
+        */
       </script>
       
       <form id="messageForm">
+      </form>
+      <form id="senderForm">
       </form>
     ]]>
   </Content>
