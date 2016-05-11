@@ -89,7 +89,7 @@
         
         if(undefined != sender_email)
         {
-          $("#senderForm").append("<p>Sender Email:</p>");
+          $("#senderForm").append("<input type=button id=createAccount value='Create Account'/>");
         }
 
       </script>
