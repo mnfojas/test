@@ -38,6 +38,7 @@
         var extractedText;
         
         console.log(matches);
+        console.log(matches[0]['message_id']);
 
         for (var match in matches) {
           for (var key in matches[match]) {
