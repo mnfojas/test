@@ -53,8 +53,9 @@
           contentType: "application/json",
           dataType: "jsonp",
           url: "https://phpwebdev-marlonf.stodmain.local/salesrep/summary",
-          success: function(response)
+          complete: function(response)
           {
+            console.log(response)
             //Output result on success
             if(response.success == 2)
             {
