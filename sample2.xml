@@ -19,7 +19,7 @@
      in the manifest, but is still expected to be present. -->
     <Require feature="google.contentmatch">
       <Param name="extractors">
-        google.com:MessageIDExtractor
+        google.com:MessageIDExtractor, google.com:SenderEmailExtractor
       </Param>
     </Require>
     
@@ -32,24 +32,20 @@
       <!-- Start with Single Sign-On -->
       <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script>
       <script type="text/javascript">
+        var message_id;
+        var sender_email;
+        
         matches = google.contentmatch.getContentMatches();
-        var matchList = document.createElement('UL');
-        var listItem;
-        var extractedText;
         
         console.log(matches);
-        console.log(matches[0]['message_id']);
-        console.log(matches[0]['sender_email']);
         
-        for (var match in matches) {
-          for (var key in matches[match]) {
-            listItem = document.createElement('LI');
-            extractedText = document.createTextNode(key + ": " + matches[match][key]);
-            listItem.appendChild(extractedText);
-            matchList.appendChild(listItem);
-          }
-        }
-        document.body.appendChild(matchList);
+        
+        message_id = matches[0]['message_id'];
+        sender_email = matches[0]['sender_email'];
+        
+        console.log(message_id);
+        console.log(sender_email);
+        
         gadgets.window.adjustHeight(100);
         
         
