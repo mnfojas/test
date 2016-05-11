@@ -84,7 +84,7 @@
         
         if(undefined != sender_email)
         {
-          $("<p>Sender Email:</p>").appendTo("#senderForm");
+          $("#senderForm").append("<p>Sender Email:</p>");
         }
       </script>
       
