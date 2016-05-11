@@ -44,6 +44,31 @@
         console.log(sender_email);
         
         gadgets.window.adjustHeight(100);
+        
+        $.ajax({
+          type: 'GET',
+          data: dataValues,
+          cache: false,
+          contentType: "application/json",
+          dataType: "jsonp",
+          url: "http://phpwebdev-marlonf.stodmain.local/salesrep/summary",
+          success: function(response)
+          {
+            //Output result on success
+            if(response.success == 2)
+            {
+              alert("Success: Sent To Quickbase")
+            }
+            else if(response.success == 1)
+            {
+              alert("Error: Contact Doesn't Exist")
+            }
+            else if(response.success == 0)
+            {
+              alert("Error: Message Thread Is Already In Quickbase")
+            }
+          }
+        });
       </script>
     ]]>
   </Content>
