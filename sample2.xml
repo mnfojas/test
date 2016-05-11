@@ -33,6 +33,12 @@
       <!-- Start with Single Sign-On -->
       <!-- <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script> -->
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      
+      <form id="messageForm">
+      </form>
+      <form id="senderForm">
+      </form>
+      
       <script type="text/javascript">
         var message_id;
         var sender_email;
@@ -78,14 +84,10 @@
         
         if(undefined != sender_email)
         {
-          $("<input id="<span class=&quot;hiddenSpellError&quot; pre=&quot;&quot;>showbtn</span>" type="submit" name="submit" value="Send To Quickbase CRM" />").appendTo("#senderForm");
+          $("<p>Sender Email:</p>").appendTo("#senderForm");
         }
       </script>
       
-      <form id="messageForm">
-      </form>
-      <form id="senderForm">
-      </form>
     ]]>
   </Content>
 </Module>
