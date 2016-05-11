@@ -58,6 +58,7 @@
           complete: function(response)
           {
             console.log(response)
+            
             //Output result on success
             if(response.success == 2)
             {
