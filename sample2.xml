@@ -44,7 +44,7 @@
         var sender_email;
         
         matches = google.contentmatch.getContentMatches();
-        
+        console.log(matches);
         message_id = matches[0]['message_id'];
         sender_email = matches[0]['sender_email'];
         
